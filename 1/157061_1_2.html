@@ -7,8 +7,7 @@
   <title>Adults ads</title>
   <link rel="stylesheet" href="./style.css">
   <style>
-#captcha_code{
-  display: none;
+div{
   padding: 10px;
 }
 
@@ -62,9 +61,8 @@ main { margin: 3rem auto; width: 50%; text-align: center; color:#ffffff; }
 <center>
 <p style="color: #ffffff;"><b>If you want to earn money from this application then you need to fill this CAPTCHA.<br/ > After filling the code given below should be written. </b></p><p style="color: #ffffff;"><small>The main purpose of giving this CAPTCHA is whether you have used our application yourself or you are using a third party.</small></p>
 </center>
-<main> <h3 class="downloadBegins">Your verify CAPTCHA is ready in <span max="10" id="remainingTime"></span> seconds</h3> </main>
 
-<div id="captcha_code">
+<div>
     <input onClick="parent.location='/1/adx157061.html'" type="submit" value="Continue">
 </div>
 
@@ -77,27 +75,7 @@ main { margin: 3rem auto; width: 50%; text-align: center; color:#ffffff; }
 <!--------    End-------->
 <!--------    -------->
 <!--------    End-------->
-      <script>
-const el = document.getElementById('captcha_code');
-
-setTimeout(() => {
-  el.style.display = 'block';
-}, 14000);
-
-         </script>
-         <script>
-         let remainingTimeElement = document.querySelector("#remainingTime"),
-         	 secondsLeft = 10
-
-const downloadTimer = setInterval( 
-    () => {
-        if (secondsLeft <= 0) clearInterval(downloadTimer)
-        remainingTimeElement.value = secondsLeft
-        remainingTimeElement.textContent = secondsLeft
-        secondsLeft -= 1
-    }, 
-1000)
-         </script>         
+     
 
  <!--------ALL POPUP ADS-------->
  
